@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "AI Job Assistant",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Analyze LinkedIn jobs, save jobs, upload resume, generate cover letters, and track applications.",
   "permissions": [
     "storage",
@@ -35,5 +35,14 @@
       "js": ["content.js"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ai-job-assistant@thangamanikandan.dev"
+    }
+  },
+  "data_collection_permissions": {
+    "required": true,
+    "justification": "This extension collects job description data from LinkedIn and user-provided profile or resume information to analyze job compatibility, identify missing skills, suggest keywords, save jobs, and generate cover letters."
+  }
 }
