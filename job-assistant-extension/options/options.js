@@ -1,4 +1,4 @@
-const API_BASE = "http://127.0.0.1:8000/api/v1";
+const API_BASE = "https://job-assistant-ai-t1no.onrender.com/api/v1";
 
 const targetRoleInput = document.getElementById("targetRole");
 const skillsInput = document.getElementById("skills");
