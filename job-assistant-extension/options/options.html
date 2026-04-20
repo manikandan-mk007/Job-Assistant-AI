@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <div>
+        <h1>User Profile<span>.</span></h1>
+        <p>Role, Skills, Education &amp; Projects</p>
+      </div>
+      <div class="header-actions">
+        <button id="openResumeBtn" class="secondary">Resume Upload</button>
+        <button id="openSavedBtn" class="secondary">Saved Jobs</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <label>Target Role</label>
+      <input id="targetRole" type="text" placeholder="Python Full Stack Developer" />
+
+      <label>Skills</label>
+      <textarea id="skills" placeholder="python, django, fastapi, react, mysql, git"></textarea>
+
+      <label>Education</label>
+      <textarea id="education" placeholder="B.Tech Information Technology"></textarea>
+
+      <label>Projects</label>
+      <textarea id="projects" placeholder="Clinic Management System, Resume Matcher"></textarea>
+
+      <label>Summary</label>
+      <textarea id="summary" placeholder="Fresher with strong project-based full stack experience."></textarea>
+
+      <button id="saveProfileBtn">Save Profile</button>
+      <p id="message" class="message"></p>
+    </div>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

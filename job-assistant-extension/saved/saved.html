@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saved Jobs</title>
+  <link rel="stylesheet" href="saved.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <div>
+        <h1>Saved Jobs<span>.</span></h1>
+        <p>Track jobs, status, scores &amp; cover letters</p>
+      </div>
+    </div>
+
+    <div id="analyticsCard" class="card">
+      <h2>Analytics</h2>
+      <div id="analyticsInfo"></div>
+    </div>
+
+    <div class="card">
+      <div class="toolbar">
+        <input id="searchInput" type="text" placeholder="Search company or role…" />
+        <select id="statusFilter">
+          <option value="">All Status</option>
+          <option value="saved">Saved</option>
+          <option value="applied">Applied</option>
+          <option value="interview">Interview</option>
+          <option value="rejected">Rejected</option>
+        </select>
+      </div>
+    </div>
+
+    <p id="message" class="message"></p>
+    <div id="jobsList" class="jobs-grid"></div>
+  </main>
+
+  <script src="saved.js"></script>
+</body>
+</html>

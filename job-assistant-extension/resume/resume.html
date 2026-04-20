@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Upload</title>
+  <link rel="stylesheet" href="resume.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>Resume Upload<span>.</span></h1>
+      <p>Upload PDF or DOCX — parsed text stored in your profile</p>
+    </div>
+
+    <div class="card">
+      <input id="resumeFile" type="file" accept=".pdf,.docx" />
+      <button id="uploadBtn">Upload Resume</button>
+      <p id="message" class="message"></p>
+    </div>
+
+    <div class="card">
+      <h2>Extracted Resume Text</h2>
+      <textarea id="resumeText" readonly></textarea>
+    </div>
+  </main>
+
+  <script src="resume.js"></script>
+</body>
+</html>

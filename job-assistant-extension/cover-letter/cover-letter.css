@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg:        #0d0d0d;
+  --bg-card:   #141414;
+  --bg-card2:  #1a1a1a;
+  --border:    #2a2a2a;
+  --accent:    #f59e0b;
+  --accent-dim:#f59e0b22;
+  --text:      #f0f0f0;
+  --text-sub:  #888;
+  --text-muted:#555;
+  --radius:    12px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: 'Space Grotesk', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 44px auto;
+  padding: 0 20px 60px;
+}
+
+/* ── Header ── */
+.header {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.header h1 span { color: var(--accent); }
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: var(--text-sub);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 16px;
+  bottom: 16px;
+  width: 2px;
+  background: var(--accent);
+  border-radius: 0 2px 2px 0;
+  opacity: 0.7;
+}
+
+/* ── Row ── */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* ── Buttons ── */
+button {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #0d0d0d;
+  transition: opacity 0.15s, transform 0.1s;
+  letter-spacing: 0.2px;
+}
+
+button:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+button:active { transform: translateY(0); }
+
+.secondary {
+  background: var(--bg-card2);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* ── Textarea ── */
+textarea {
+  width: 100%;
+  min-height: 420px;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.8;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+textarea::placeholder { color: var(--text-muted); }
+
+textarea:focus { border-color: var(--accent); }
+
+/* ── Message ── */
+.message {
+  font-size: 12px;
+  color: var(--accent);
+  margin-top: 12px;
+  padding: 9px 13px;
+  background: var(--accent-dim);
+  border: 1px solid #f59e0b33;
+  border-radius: 6px;
+  letter-spacing: 0.1px;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }

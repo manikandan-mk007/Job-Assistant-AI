@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Job Assistant</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div>
+        <h1>AI Job<span>.</span></h1>
+        <p class="sub">LinkedIn Analyzer</p>
+      </div>
+      <button id="settingsBtn" class="icon-btn">⚙</button>
+    </div>
+ 
+    <div id="authCard" class="card">
+      <h2>Login</h2>
+      <input id="name" type="text" placeholder="Name — for register only" />
+      <input id="email" type="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
+ 
+      <div class="grid2">
+        <button id="loginBtn">Login</button>
+        <button id="registerBtn" class="secondary">Register</button>
+      </div>
+ 
+      <p id="authMessage" class="message"></p>
+    </div>
+ 
+    <div id="userCard" class="card hidden">
+      <div class="row between">
+        <div>
+          <h2 id="welcomeText">Welcome</h2>
+          <p class="sub-small">Ready to analyze jobs</p>
+        </div>
+        <button id="logoutBtn" class="secondary small-btn">Logout</button>
+      </div>
+ 
+      <button id="analyzeBtn">Analyze Current Job</button>
+ 
+      <div class="grid2">
+        <button id="resumeBtn" class="secondary">Resume</button>
+        <button id="savedBtn" class="secondary">Saved Jobs</button>
+      </div>
+ 
+      <p id="statusMessage" class="message"></p>
+    </div>
+ 
+    <div id="loadingCard" class="card hidden">
+      <p>Analyzing job...</p>
+    </div>
+ 
+    <div id="jobCard" class="card hidden">
+      <h2>Job Details</h2>
+      <div id="jobInfo"></div>
+    </div>
+ 
+    <div id="analysisCard" class="card hidden">
+      <h2>Analysis Result</h2>
+      <div id="analysisInfo"></div>
+ 
+      <div class="grid2">
+        <button id="saveJobBtn">Save Job</button>
+        <button id="coverLetterBtn" class="secondary">Cover Letter</button>
+      </div>
+    </div>
+  </div>
+ 
+  <script src="popup.js"></script>
+</body>
+</html>
