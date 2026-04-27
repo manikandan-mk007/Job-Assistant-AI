@@ -145,6 +145,7 @@ https://job-assistant-ai-t1no.onrender.com
 
 | Section       |  Extension Image|
 |--------------|------------|
+| Extension | ![Extension](screenshots/official.png) |
 | SignUp/SignIn| ![SignUp](screenshots/popup_preview.png) |
 | Form Options | ![Options](screenshots/options_preview.png) |
 | Saved Job    | ![Saved Job](screenshots/saved_preview.png) |
