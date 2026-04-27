@@ -140,6 +140,12 @@ uvicorn app.main:app --reload
 https://job-assistant-ai-t1no.onrender.com
 ```
 
+##  Firefox Download Link
+
+```bash
+https://addons.mozilla.org/en-US/firefox/addon/ai-job-assistant/
+```
+
 ##  Screenshots
 
 
